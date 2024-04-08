@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		E10068602BC1557200D9FBA0 /* UserlistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100685F2BC1557200D9FBA0 /* UserlistApp.swift */; };
-		E10068622BC1557200D9FBA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10068612BC1557200D9FBA0 /* ContentView.swift */; };
+		E10068622BC1557200D9FBA0 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10068612BC1557200D9FBA0 /* UserListView.swift */; };
 		E10068642BC1557700D9FBA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10068632BC1557700D9FBA0 /* Assets.xcassets */; };
 		E10068682BC1557700D9FBA0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10068672BC1557700D9FBA0 /* Preview Assets.xcassets */; };
 		E10068722BC1557800D9FBA0 /* UserlistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10068712BC1557800D9FBA0 /* UserlistTests.swift */; };
 		E100687C2BC1557800D9FBA0 /* UserlistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100687B2BC1557800D9FBA0 /* UserlistUITests.swift */; };
 		E100687E2BC1557800D9FBA0 /* UserlistUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100687D2BC1557800D9FBA0 /* UserlistUITestsLaunchTests.swift */; };
+		E17BD0212BC28641002F6B55 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17BD0202BC28641002F6B55 /* String+Extension.swift */; };
+		E18F38872BC1B5E100BA9B43 /* CreateUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18F38862BC1B5E100BA9B43 /* CreateUserView.swift */; };
+		E1E478722BC174F5001CDA58 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E478712BC174F5001CDA58 /* Constants.swift */; };
+		E1E478742BC17628001CDA58 /* UserListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E478732BC17628001CDA58 /* UserListModel.swift */; };
+		E1E478762BC176A7001CDA58 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E478752BC176A7001CDA58 /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,7 @@
 /* Begin PBXFileReference section */
 		E100685C2BC1557200D9FBA0 /* Userlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Userlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E100685F2BC1557200D9FBA0 /* UserlistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserlistApp.swift; sourceTree = "<group>"; };
-		E10068612BC1557200D9FBA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E10068612BC1557200D9FBA0 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		E10068632BC1557700D9FBA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E10068652BC1557700D9FBA0 /* Userlist.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Userlist.entitlements; sourceTree = "<group>"; };
 		E10068672BC1557700D9FBA0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +50,11 @@
 		E10068772BC1557800D9FBA0 /* UserlistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserlistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E100687B2BC1557800D9FBA0 /* UserlistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserlistUITests.swift; sourceTree = "<group>"; };
 		E100687D2BC1557800D9FBA0 /* UserlistUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserlistUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E17BD0202BC28641002F6B55 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		E18F38862BC1B5E100BA9B43 /* CreateUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserView.swift; sourceTree = "<group>"; };
+		E1E478712BC174F5001CDA58 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E1E478732BC17628001CDA58 /* UserListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListModel.swift; sourceTree = "<group>"; };
+		E1E478752BC176A7001CDA58 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				E100685F2BC1557200D9FBA0 /* UserlistApp.swift */,
-				E10068612BC1557200D9FBA0 /* ContentView.swift */,
+				E1E4786D2BC1745C001CDA58 /* Model */,
+				E1E4786E2BC17468001CDA58 /* View */,
+				E1E4786F2BC17472001CDA58 /* ViewModel */,
+				E1E478702BC174D4001CDA58 /* Helper */,
 				E10068632BC1557700D9FBA0 /* Assets.xcassets */,
 				E10068652BC1557700D9FBA0 /* Userlist.entitlements */,
 				E10068662BC1557700D9FBA0 /* Preview Content */,
@@ -127,6 +140,40 @@
 				E100687D2BC1557800D9FBA0 /* UserlistUITestsLaunchTests.swift */,
 			);
 			path = UserlistUITests;
+			sourceTree = "<group>";
+		};
+		E1E4786D2BC1745C001CDA58 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1E478732BC17628001CDA58 /* UserListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1E4786E2BC17468001CDA58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E10068612BC1557200D9FBA0 /* UserListView.swift */,
+				E18F38862BC1B5E100BA9B43 /* CreateUserView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E1E4786F2BC17472001CDA58 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E1E478752BC176A7001CDA58 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E1E478702BC174D4001CDA58 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E1E478712BC174F5001CDA58 /* Constants.swift */,
+				E17BD0202BC28641002F6B55 /* String+Extension.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E10068622BC1557200D9FBA0 /* ContentView.swift in Sources */,
+				E10068622BC1557200D9FBA0 /* UserListView.swift in Sources */,
+				E17BD0212BC28641002F6B55 /* String+Extension.swift in Sources */,
+				E18F38872BC1B5E100BA9B43 /* CreateUserView.swift in Sources */,
 				E10068602BC1557200D9FBA0 /* UserlistApp.swift in Sources */,
+				E1E478742BC17628001CDA58 /* UserListModel.swift in Sources */,
+				E1E478762BC176A7001CDA58 /* UserViewModel.swift in Sources */,
+				E1E478722BC174F5001CDA58 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +479,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
@@ -463,7 +515,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;

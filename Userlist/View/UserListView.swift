@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  UserListView.swift
 //  Userlist
 //
 //  Created by Raj Kumar on 06/04/24.
@@ -25,15 +25,15 @@ struct UserListView: View {
                     Text("Status: \(user.status.rawValue.capitalized)")
                         .font(.subheadline)
                 }
-                .listStyle(.plain)
+                .listStyle(.grouped)
             }
             .navigationTitle("Userlist")
             .navigationBarTitleDisplayMode(.automatic)
             .navigationBarItems(trailing:
-                                NavigationLink(destination: CreateUserView(), isActive: $isShowCreateUser) {
-                                    Image(systemName: "plus")
-                                }
-                            )
+                                    NavigationLink(destination: CreateUserView(), isActive: $isShowCreateUser) {
+                Image(systemName: "plus")
+            }
+            )
             .onAppear {
                 viewModel.getUserListData {}
             }
